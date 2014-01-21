@@ -1,0 +1,34 @@
+{
+  "name": "grunt-remove-calls",
+  "description": "Grunt task to remove method calls statements",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": {
+    "name": "Jaime Pastor",
+    "email": "moelders@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/moelders/grunt-remove-calls.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moelders/grunt-remove-calls/issues"
+  },
+  "main": "Gruntfile.js",
+  "bin": "bin/grunt-remove-calls",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-nodeunit": "~0.2.2"
+  },
+  "keywords": [
+    "gruntplugin", "console", "log", "debugging", "remove", "method", "calls",
+    "statements"
+  ]
+}

@@ -1,4 +1,10 @@
-lib-cov
+# ----------------------------
+# ---      GIT ignore      ---
+# ----------------------------
+
+# Untracked files:
+.project
+.settings
 *.seed
 *.log
 *.csv
@@ -6,10 +12,26 @@ lib-cov
 *.out
 *.pid
 *.gz
+*.bck
+*.orig
+/npm-debug.log
 
+# Untracked tmp files
+# For Mac
+.DS_Store
+
+# Untracked file exceptions:
+
+# Untracked directories:
+lib-cov
 pids
 logs
 results
+doc
+jsdoc
+publish
+tmp
+temp
+/node_modules
+/examples/js/output.js
 
-npm-debug.log
-node_modules
