@@ -11,9 +11,10 @@ exports.init = function(grunt) {
       _regExp;
 
     if (('namespaces' in opts) && ('methods' in opts)) {
-      _regExp = new RegExp('(' + opts.namespaces.join('|') + ')' + '.(?:' +
-        opts.methods.join('|') + ')\\s{0,}\\([^;]*\\)(?!\\s*[;,]?\\s*\\/\\*' +
-          '\\s*remove-calls:skip\\s*\\*\\/)\\s{0,};?', 'gi');
+      _regExp = new RegExp('^(?!/(/|\\*))\\s*(window.)?(' +
+        opts.namespaces.join('|') + ')' + '.(?:' + opts.methods.join('|') +
+          ')\\s{0,}\\([^;]*\\)(?!\\s*[;,]?\\s*\\/\\*\\s*remove-calls:skip\\s*' +
+          '\\*\\/)\\s{0,};?', 'gi');
 
       _src = _src.replace(_regExp, function() {
         _counter++;
