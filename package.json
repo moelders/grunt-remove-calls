@@ -1,7 +1,7 @@
 {
   "name": "grunt-remove-calls",
   "description": "Grunt task to remove method calls statements",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "",
   "author": {
     "name": "Jaime Pastor",
